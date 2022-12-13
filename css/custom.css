@@ -1,0 +1,167 @@
+/* @font-face {
+font-family: Candyhome;
+src: url(https://npm.elemecdn.com/anzhiyu-blog@1.1.6/fonts/Candyhome.ttf);
+font-display: swap;
+font-weight: lighter;
+} */
+@font-face {
+    font-family: ZhuZiAYuanJWD;
+    src: url(https://npm.elemecdn.com/anzhiyu-blog@1.1.6/fonts/ZhuZiAWan.woff2);
+    font-display: swap;
+    font-weight: lighter;
+}
+
+/* div#menus {
+    font-family: "ZhuZiAYuanJWD";
+}
+
+h1#site-title {
+    font-family: ZhuZiAYuanJWD;
+    font-size: 3em !important;
+} */
+
+/* a.article-title,
+a.blog-slider__title,
+a.categoryBar-list-link,
+h1.post-title {
+    font-family: ZhuZiAYuanJWD;
+} */
+/* 滚动条 */
+
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(18, 133, 240);
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: rgb(18, 133, 240);
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 3em;
+    /* 可以定义图标大小 */
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
+#page-header:not(.not-top-img):before {
+    background-color: transparent !important;
+}
+
+/* 首页文章卡片 */
+#recent-posts>.recent-post-item {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* 首页侧栏卡片 */
+#aside-content .card-widget {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* 文章页面正文背景 */
+div#post {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* 分页页面 */
+div#page {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* 归档页面 */
+div#archive {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* 标签页面 */
+div#tag {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* 分类页面 */
+div#category {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/*夜间模式伪类遮罩层透明*/
+[data-theme="dark"] #recent-posts>.recent-post-item {
+    background: #121212;
+}
+
+[data-theme="dark"] .card-widget {
+    background: #121212 !important;
+}
+
+[data-theme="dark"] div#post {
+    background: #121212 !important;
+}
+
+[data-theme="dark"] div#tag {
+    background: #121212 !important;
+}
+
+[data-theme="dark"] div#archive {
+    background: #121212 !important;
+}
+
+[data-theme="dark"] div#page {
+    background: #121212 !important;
+}
+
+[data-theme="dark"] div#category {
+    background: #121212 !important;
+}
+
+[data-theme="dark"] div#category {
+    background: transparent !important;
+}
+
+/* 页脚透明 */
+#footer {
+    background: transparent !important;
+}
+
+/* 头图透明 */
+#page-header {
+    background: transparent !important;
+}
+
+#rightside>div>button {
+    border-radius: 5px;
+}
+
+/* md网站下划线 */
+#article-container a:hover {
+    text-decoration: none !important;
+}
+
+#article-container #hpp_talk p img {
+    display: inline;
+}
+
+/* Aplayer音乐播放隐藏 */
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    left: -66px !important;
+    /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+    left: 0 !important;
+    /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+}
